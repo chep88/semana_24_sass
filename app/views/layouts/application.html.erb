@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <%= render  params[:controller] == 'products' ? 'layouts/navbar_default' : 'layouts/navbar_inverse' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>

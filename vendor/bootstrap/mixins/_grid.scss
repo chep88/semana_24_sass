@@ -91,6 +91,7 @@
   @media (min-width: $screen-md-min) {
     right: percentage(($columns / $grid-columns));
   }
+
 }
 
 // Generate the large columns
@@ -104,6 +105,7 @@
     float: left;
     width: percentage(($columns / $grid-columns));
   }
+
 }
 @mixin make-lg-column-offset($columns) {
   @media (min-width: $screen-lg-min) {
